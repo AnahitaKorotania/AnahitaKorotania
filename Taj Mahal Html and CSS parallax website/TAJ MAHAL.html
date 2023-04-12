@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<head>
+    <title>TAJ MAHAL</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Nunito);
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body { 
+  margin:0;
+  padding:0;
+	perspective: 1px;
+	transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: Nunito;
+}
+
+h1 {
+   font-size: 250%
+}
+
+p {
+  font-size: 140%;
+  line-height: 150%;
+  color: #333;
+}
+
+#virtual {
+font-size: 140%;
+}
+
+.slide {
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+	transform-style: inherit;
+}
+
+img {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  width: 320px;
+  height: 240px;
+  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+img:last-of-type {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+}
+
+.slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
+}
+
+.title {
+  width: 50%;
+  padding: 5%;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+.slide:nth-child(2n) .title {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.slide:nth-child(2n+1) .title {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.slide, .slide:before {
+  background: 50% 50% / cover;  
+}
+
+.header {
+  text-align: center;
+  font-size: 175%;
+  color: #fff;
+  text-shadow: 0 2px 2px #000;
+}
+
+#title {
+  background-image: url("https://media.tacdn.com/media/attractions-splice-spp-674x446/06/71/c3/53.jpg");
+  z-index:2;
+}
+
+#title h1 {
+ transform: translateZ(.25px) scale(.75);
+ transform-origin: 50% 100%;
+
+}
+
+#slide1:before {
+  background-image: url("https://i.pinimg.com/originals/01/10/ea/0110ea13931d4f19c83f64a1c75481e7.gif");
+  transform: translateZ(-1px) scale(2);
+}
+
+#slide2 {
+  background-image: url("https://img.freepik.com/free-photo/top-view-background-beautiful-white-grey-brown-cream-blue-background_140725-72219.jpg?size=626&ext=jpg&ga=GA1.2.2036364465.1630886400");
+  z-index:2;
+}
+
+#slide3:before {
+  background-image: url("https://previews.123rf.com/images/vamariyav/vamariyav2001/vamariyav200100056/137230071-abstract-ancient-antique-background-blank-background-border-brown-grunge-background-damaged-decay-de.jpg");
+  transform: translateZ(-1px) scale(2);
+}
+
+#slide4 {
+  background: #222;
+}
+
+
+
+a:hover {
+  text-decoration: underline;
+  color: rgba(157, 255, 0, 0.801);
+}
+
+    </style>
+</head>
+<div id="title" class="slide header">
+    <h1>The Taj Mahal</h1>
+  </div>
+  
+  <div id="slide1" class="slide">
+    <div class="title">
+      <h1>LOCATION</h1>
+      <p>The Taj Mahal is located in Agra, Uttar Pradesh, India. It covers an area of about 17 hectares.  </p>
+    </div>
+  </div>
+  
+  <div id="slide2" class="slide">
+    <div class="title">
+      <h1>Why was it made?</h1>
+      <p> It was commissioned in 1632 by the Mughal emperor Shah Jahan (reigned from 1628 to 1658) to house the tomb of his favourite wife, Mumtaz Mahal; it also houses the tomb of Shah Jahan himself. </p>
+    </div>
+    <img src="https://www.thoughtco.com/thmb/mcy9CuvrgR4wkj-epBByha1LjRo=/3435x2576/smart/filters:no_upscale()/sunrise-at-taj-mahal--agra--uttar-pradash--india-583682538-5b91840bc9e77c0050bdc67b.jpg">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Taj_Mahal_in_India_-_Kristian_Bertel.jpg/440px-Taj_Mahal_in_India_-_Kristian_Bertel.jpg"> 
+  </div>
+  
+  <div id="slide3" class="slide">
+    <div class="title">
+      <h1>Interesting Facts</h1>
+      <p>
+        <ul>
+          <li>The Taj Mahal is made up of white marble.</li>
+          <li>The name Taj Mahal means “crown of palaces”.</li>
+          <li>The construction of the Taj Mahal took around 20 years.</li>
+
+        </ul>
+      </p>
+    </div>
+  </div>
+  
+        
+  <div id="slide4" class="slide header">
+      <h1>Thank you!!</h1>
+      <h2>By Anahita Korotania</h2>
+      
+  </div>
+<div id="slide5">
+  <a href="360.html">Click here for a 360 degree view of the Taj Mahal</a>
+</div>
